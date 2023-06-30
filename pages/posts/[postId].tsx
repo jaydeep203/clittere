@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import React from 'react'
 import { ClipLoader } from 'react-spinners';
 
-const postView = () => {
+const PostView = () => {
     const router = useRouter();
     const {postId} = router.query;
 
@@ -36,4 +36,4 @@ const postView = () => {
   )
 }
 
-export default postView;
+export default PostView;
