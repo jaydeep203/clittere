@@ -28,7 +28,8 @@ const LoginModal = () => {
       setIsLoading(true);
       await signIn("credentials", {
         email,
-        password
+        password,
+        redirect:false
       });
 
       toast.success("Logged in Success.");

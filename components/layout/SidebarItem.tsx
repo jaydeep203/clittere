@@ -18,7 +18,7 @@ const SidebarItem:React.FC<SidebarItemProps> = ({
     label, href, icon:Icon, onClick, auth, alert
 }) => {
     const loginModal = useLoginModal();
-    const {data:currentUser} = useCurrentUser();
+    const {data:currentUser}:any = useCurrentUser();
     const router = useRouter();
     const handleClick = useCallback(()=>{
         if(onClick){
